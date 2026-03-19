@@ -7,7 +7,8 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 $extensionPath = Split-Path -Parent $MyInvocation.MyCommand.Path
-$outputFileName = "ADORedirector-v1.0.0.zip"
+$manifest = Get-Content (Join-Path $extensionPath "manifest.json") | ConvertFrom-Json
+$outputFileName = "ADORedirector-v$($manifest.version).zip"
 $outputPath = Join-Path $extensionPath $outputFileName
 
 # Required files for the extension package
