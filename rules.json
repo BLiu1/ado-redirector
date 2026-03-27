@@ -10,6 +10,14 @@
     },
     "condition": {
       "regexFilter": "^https?://([^.]+)\\.visualstudio\\.com/(?:DefaultCollection/)?(.*)",
+      "excludedRequestDomains": [
+        "code.visualstudio.com",
+        "developercommunity.visualstudio.com",
+        "marketplace.visualstudio.com",
+        "my.visualstudio.com",
+        "vssps.visualstudio.com",
+        "vsstatus.visualstudio.com"
+      ],
       "resourceTypes": [
         "main_frame",
         "sub_frame"
