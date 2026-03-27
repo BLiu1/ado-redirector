@@ -23,5 +23,22 @@
         "sub_frame"
       ]
     }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": { "host": "aex.dev.azure.com" }
+      }
+    },
+    "condition": {
+      "requestDomains": ["app.vsaex.visualstudio.com"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
   }
 ]
