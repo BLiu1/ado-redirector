@@ -13,10 +13,12 @@
       "excludedRequestDomains": [
         "code.visualstudio.com",
         "developercommunity.visualstudio.com",
+        "manage.visualstudio.com",
         "marketplace.visualstudio.com",
         "my.visualstudio.com",
         "vssps.visualstudio.com",
-        "vsstatus.visualstudio.com"
+        "vsstatus.visualstudio.com",
+        "www.visualstudio.com"
       ],
       "resourceTypes": [
         "main_frame",
